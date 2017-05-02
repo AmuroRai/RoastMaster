@@ -60,7 +60,7 @@ roastplot<-function(dataout,dr,ds)
     geom_point(data=ds$df,size=5,aes(shape=Status))+
     labs(x=sino[6,],y=sino[7,],color=sino[8,],shape=sino[9,],
          title=paste(sino[10,],format(Sys.Date(),"%Y/%m/%d"),sep=""))+
-    ylim(50,250)+
+    ylim(50,230)+
     scale_color_discrete(labels=cl,breaks=z)+
     scale_shape_manual(
       values=1:12,
